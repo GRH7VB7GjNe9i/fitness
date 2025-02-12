@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import './App.css'
-import Navbar from './components/navbar'
+import Navbar from './components/Navbar'
 import Routing from './components/Routing'
 import Login from './components/Login'
 import { onAuthStateChanged, signOut } from "firebase/auth";
