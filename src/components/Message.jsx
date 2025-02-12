@@ -107,7 +107,7 @@ const Message = () => {
                 >
                   <div className="flex items-center w-60 h-15 bg-zinc-100 mb-2 hover:bg-zinc-300 rounded-md shadow-md">
                     {user.photoURL && <img src={user.photoURL} alt="" className="w-10 h-10 rounded-full ml-3 mr-4 hover: hover:w-15" />}
-                    {user.displayName}
+                    {user.displayName ===null ? user.email: user.displayName}
   
                 </div>
                  
@@ -124,7 +124,7 @@ const Message = () => {
         <div className="">
           <div className="flex items-center gap-5 py-5 border-b hover:bg-zinc-300  ">
             <img className="h-10 w-10 rounded-full ml-5" src={selectedUser.photoURL} alt="" />
-          <h2>{selectedUser.displayName}</h2>
+         <h2>{selectedUser.displayName ===null ? selectedUser.email: selectedUser.displayName}</h2>
           </div>
           <div className="bg-zinc-100 h-120 w-200 rounded-md  p-4 mb-4 overflow-y-auto scroll-smooth border-b">
             {chat.map((msg, index) => (
