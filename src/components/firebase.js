@@ -5,7 +5,7 @@ import { getStorage } from "firebase/storage";
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCyox_Mk4tvc0fsOHitroNZ3w3EyUiQoTY",
+  apiKey: "Add you api key",
   authDomain: "community-b73eb.firebaseapp.com",
   projectId: "community-b73eb",
   storageBucket: "community-b73eb.firebasestorage.app",
@@ -24,3 +24,4 @@ const db = getFirestore(app);  // Firestore initialization
 const storage = getStorage(app);
 // Export the Firebase services for use in other components
 export { auth, googleProvider, db , storage };
+
